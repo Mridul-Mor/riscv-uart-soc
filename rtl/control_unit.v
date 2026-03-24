@@ -2,20 +2,20 @@ module control_unit (
     input  [6:0] opcode,
     input  [2:0] funct3,
     input  [6:0] funct7,
-    output reg  reg_we, // register write enable
-    output reg  mem_we,// memory write enable
-    output reg  mem_re,// memory read enable
-    output reg  alu_src, // 0=rs2, 1=imm
-    output reg  mem_to_reg, // 0=ALU, 1=Mem
-    output reg  branch, // branch instruction?
-    output reg  jal, // JAL?
-    output reg [3:0] alu_ctrl // ALU operation
+    output reg  reg_we, 
+    output reg  mem_we,
+    output reg  mem_re,
+    output reg  alu_src,
+    output reg  mem_to_reg,
+    output reg  branch, 
+    output reg  jal, 
+    output reg [3:0] alu_ctrl 
 );
 
 always @(*) begin
-    // defaults — sab off
+    
     {reg_we, mem_we, mem_re, alu_src, mem_to_reg, branch, jal} = 7'b0;
-    alu_ctrl = 4'b0000; // ADD
+    alu_ctrl = 4'b0000; 
 
     case (opcode)
         7'b0110011: begin // R-type
@@ -76,7 +76,7 @@ always @(*) begin
             jal    = 1;
         end
 
-        default: ; // NOP
+        default: ; 
     endcase
 end
 

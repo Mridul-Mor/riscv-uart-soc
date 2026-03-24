@@ -158,6 +158,11 @@ uart_data=68 (D) | start=1
 uart_data=85 (U) | start=1
 uart_data=76 (L) | start=1
 ```
+## Simulation Output
+
+![GTKWave Waveform](waveform%20riscv_uart.png)
+
+*UART transmitting "MRIDUL" — uart_data shows 77→82→73→68→85→76*
 
 ### Instructions Verified
 
@@ -189,6 +194,12 @@ make mount
 # inside container
 ./flow.tcl -design riscv_uart_soc
 ```
+## GDS Layout
+
+![GDS Layout](gds%20riscv_uart_soc.png
+)
+
+*soc_top.gds viewed in KLayout — 600×600 µm die, Sky130 PDK*
 
 ### Signoff Results
 
