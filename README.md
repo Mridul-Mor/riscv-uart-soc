@@ -160,8 +160,7 @@ uart_data=76 (L) | start=1
 ```
 ## Simulation Output
 
-![GTKWave Waveform](<img width="1211" height="275" alt="waveform riscv_uart" src="https://github.com/user-attachments/assets/05bf7cea-f512-495e-beda-861374fea693" />
-)
+![GTKWave Waveform](waveform%20riscv_uart.png)
 
 *UART transmitting "MRIDUL" — uart_data shows 77→82→73→68→85→76*
 
@@ -197,7 +196,7 @@ make mount
 ```
 ## GDS Layout
 
-![GDS Layout](<img width="944" height="877" alt="gds riscv_uart_soc" src="https://github.com/user-attachments/assets/830b61de-6d2b-4d75-b191-4aefc3849212" />
+![GDS Layout](gds%20riscv_uart_soc.png
 )
 
 *soc_top.gds viewed in KLayout — 600×600 µm die, Sky130 PDK*
