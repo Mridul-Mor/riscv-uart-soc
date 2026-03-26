@@ -52,7 +52,7 @@ rx   ───►│  │              │   └──────────�
 | Metric                | Value                     |
 |-----------------------|---------------------------|
 | Flow Status           | Successful                |
-| Synth Cell Count      | 375                       |
+| Synth Cell Count      | 378                       |
 | Total Cells (w/ fill) | 1350                      |
 | Die Area              | 13,822 um² (0.0138 mm²)   |
 | Core Area             | 10,184.8 um²              |
